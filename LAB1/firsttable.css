@@ -1,0 +1,17 @@
+table{
+    border-collapse: collapse;
+    width: 60%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.table_header{
+    background-color: yellow;
+    color: green;
+    text-align: center;
+}
+td,th{
+    border: 2px solid black;
+    padding: 4px;
+}
+body{
+    background-color:#5DADE2;
+}
