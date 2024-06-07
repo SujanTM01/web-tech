@@ -1,0 +1,37 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!DOCTYPE CV[ 
+<!ELEMENT CV (PersonalInformation, SummaryOfSelf, Education, Experience, Skills, Hobbies, References)>
+
+<!ELEMENT PersonalInformation (Name, Address, PhoneNumber, Email)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT PhoneNumber (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+
+<!ELEMENT SummaryOfSelf (Summary)>
+<!ELEMENT Summary (#PCDATA)>
+
+<!ELEMENT Education (Degree+)>
+<!ELEMENT Degree (Type, Field, Institution, Year)>
+<!ELEMENT Type (#PCDATA)>
+<!ELEMENT Field (#PCDATA)>
+<!ELEMENT Institution (#PCDATA)>
+<!ELEMENT Year (#PCDATA)>
+
+<!ELEMENT Experience (Job+)>
+<!ELEMENT Job (Title, Company, Years, Description)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Company (#PCDATA)>
+<!ELEMENT Years (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+
+<!ELEMENT Skills (Skill+)>
+<!ELEMENT Skill (#PCDATA)>
+
+<!ELEMENT Hobbies (Hobby+)>
+<!ELEMENT Hobby (#PCDATA)>
+
+<!ELEMENT References (Reference+)>
+<!ELEMENT Reference (Name, Position, Company, Email)>
+<!ELEMENT Position (#PCDATA)>
+]>

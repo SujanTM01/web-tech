@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="CV">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="PersonalInformation">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Name" type="xs:string"/>
+                            <xs:element name="Address" type="xs:string"/>
+                            <xs:element name="PhoneNumber" type="xs:string"/>
+                            <xs:element name="Email" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SummaryOfSelf">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Summary" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Education">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Degree" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Type" type="xs:string"/>
+                                        <xs:element name="Field" type="xs:string"/>
+                                        <xs:element name="Institution" type="xs:string"/>
+                                        <xs:element name="Year" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Experience">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Job" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Title" type="xs:string"/>
+                                        <xs:element name="Company" type="xs:string"/>
+                                        <xs:element name="Years" type="xs:string"/>
+                                        <xs:element name="Description" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Skills">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Skill" maxOccurs="unbounded" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Hobbies">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Hobby" maxOccurs="unbounded" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="References">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Reference" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Name" type="xs:string"/>
+                                        <xs:element name="Position" type="xs:string"/>
+                                        <xs:element name="Company" type="xs:string"/>
+                                        <xs:element name="Email" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

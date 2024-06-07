@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="cv.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<!DOCTYPE CV [ 
+<!ELEMENT CV (PersonalInformation, SummaryOfSelf, Education, Experience, Skills, Hobbies, References)>
+
+<!ELEMENT PersonalInformation (Name, Address, PhoneNumber, Email)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT PhoneNumber (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+
+<!ELEMENT SummaryOfSelf (Summary)>
+<!ELEMENT Summary (#PCDATA)>
+
+<!ELEMENT Education (Degree+)>
+<!ELEMENT Degree (Type, Field, Institution, Year)>
+<!ELEMENT Type (#PCDATA)>
+<!ELEMENT Field (#PCDATA)>
+<!ELEMENT Institution (#PCDATA)>
+<!ELEMENT Year (#PCDATA)>
+
+<!ELEMENT Experience (Job+)>
+<!ELEMENT Job (Title, Company, Years, Description)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Company (#PCDATA)>
+<!ELEMENT Years (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+
+<!ELEMENT Skills (Skill+)>
+<!ELEMENT Skill (#PCDATA)>
+
+<!ELEMENT Hobbies (Hobby+)>
+<!ELEMENT Hobby (#PCDATA)>
+
+<!ELEMENT References (Reference+)>
+<!ELEMENT Reference (Name, Position, Company, Email)>
+<!ELEMENT Position (#PCDATA)>
+]>
+
+<CV>
+    <PersonalInformation>
+        <Name>Sujan Lama</Name>
+        <Address>Bajrabarahi, lalitpur</Address>
+        <PhoneNumber>986896799</PhoneNumber>
+        <Email>Sujanlama2323@gmail.com</Email>
+    </PersonalInformation>
+
+    <SummaryOfSelf>
+        <Summary>
+            i  am Sujan Lama with degree in IT and have worked Experiences as an IT technician for 5 year.
+            My Experiences includes as programmer and Senior software Developer.All Skills and Educaion are
+            declared below. I also believe i have the necessary skills and expertise to contribute to your
+            team and help your company achieve it's goals.
+        </Summary>
+    </SummaryOfSelf>
+
+    <Education>
+        <Degree>
+            <Type>Bachelor</Type>
+            <Field>BCA</Field>
+            <Institution>Tribhuban Univercity</Institution>
+            <Year>2018</Year>
+        </Degree>
+    </Education>
+
+    <Experience>
+        <Job>
+            <Title>Web Developer</Title>
+            <Company>Webtech Nepal Pvt</Company>
+            <Years>2090 - Present</Years>
+            <Description>
+                We offer various services, including web design, web development, e-commerce development, 
+                search engine optimization, mobile app development, web hosting, domain registration, and digital marketing.
+            </Description>
+        </Job>
+    </Experience>
+
+    <Skills>
+        <Skill>Front-End Coding</Skill>
+        <Skill>Responsive Design</Skill>
+        <Skill>Back-End Web Programming Languages</Skill>
+        <Skill>Data Analysis</Skill>
+        <Skill>Creative Writing</Skill>
+    </Skills>
+
+    <Hobbies>
+        <Hobby>Reading</Hobby>
+        <Hobby>Writing</Hobby>
+        <Hobby>Football</Hobby>
+        <Hobby>Learning new technologies</Hobby>
+    </Hobbies>
+
+    <References>
+        <Reference>
+            <Name>John</Name>
+            <Position>Senior Researcher</Position>
+            <Company>Webtech Nepal Pvt</Company>
+            <Email>john22@gmail.com</Email>
+        </Reference>
+        <Reference>
+            <Name>Jugal Tamang</Name>
+            <Position>Project Manager</Position>
+            <Company>Tech Innovations</Company>
+            <Email>Jugal.com</Email>
+        </Reference>
+    </References>
+</CV>
